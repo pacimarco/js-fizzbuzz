@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+    width: 1000px;
+    margin:  auto;
+    background-color: black;
+}
+
+.box{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: aqua;
+    color: black;
+}
+
+main{
+    background-color: black;
+}
+
+.box-red{
+    background-color: red;
+}
