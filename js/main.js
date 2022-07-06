@@ -1,6 +1,6 @@
 const containerDom = document.getElementById('container');
 
-for (let i=0; i<=100; i++) {
+for (let i=1; i<=100; i++) {
     const div = document.createElement('div');
     let num = i;
     div.classList.add('box');
@@ -10,20 +10,23 @@ for (let i=0; i<=100; i++) {
 
     if (i % 3 ==0) {
         div.classList.add('box-red');
-        containerDom.innerHTML += '<div class="box"> Fizz </div>';
+        div.innerHTML = 'Fizz';
         console.log('Fizz');
     
     }else if (i % 5 ==0) {
         div.classList.add('box-blue');
-        containerDom.innerHTML += '<div class="box"> Buzz </div>';
+        div.innerHTML = 'buzz';
         console.log('Buzz');
 
     
     }else if (i % 3 ==0 && i % 5 ==0) {
         div.classList.add('box-green');
-        div.innerHTML += '<div class="box"> FizzBuzz </div>';
+        div.innerHTML = 'FizzBuzz';
         console.log('FizzBuzz');
     
+    }
+    else {
+        div.innerHTML = num;
     }
 
 } 
