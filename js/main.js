@@ -6,7 +6,7 @@ for (let i=0; i<=100; i++) {
     div.classList.add('box');
     containerDom.appendChild(div);
     console.log(i);
-    containerDom.innerHTML += '<div class="box">  </div>';
+    containerDom.innerHTML += '<div class="box"> i </div>';
 
     if (i % 3 ==0) {
         div.classList.add('box-red');
@@ -18,7 +18,7 @@ for (let i=0; i<=100; i++) {
     
     }else if (i % 3 ==0 && i % 5 ==0) {
         div.classList.add('box-green');
-        containerDom.innerHTML += '<div class="box"> FizzBuzz </div>';
+        div.innerHTML += '<div class="box"> FizzBuzz </div>';
     
     }
 
